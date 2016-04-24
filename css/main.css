@@ -65,7 +65,7 @@ main > section {
 }
 
 .btn-blue {
-    background-color: rgba(0,158,227, 0.78);
+    background-color: #5B0668/*rgba(0,158,227, 0.78)*/;
     box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
     padding: 15px 55px;
     color: #fff;
@@ -148,7 +148,7 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #009EE3;
+	color: #5B0668;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -171,7 +171,7 @@ main > section {
     margin: 0 0 30px;
     padding-bottom: 30px;
     position: relative;
-    text-transform: uppercase;
+
 }
 
 .sec-title.white h2 {
@@ -179,7 +179,7 @@ main > section {
 }
 
 .sec-title h2:after {
-    border-bottom: 1px solid #009ee3;
+    border-bottom: 1px solid white;
     content: "";
     display: block;
     left: 45%;
@@ -278,7 +278,7 @@ main > section {
         -ms-transition: all 0.8s ease 0s;
          -o-transition: all 0.8s ease 0s;
             transition: all 0.8s ease 0s;
-    background-color: #94179F;
+    background-color: #5B0668/*#94179F*/;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     padding: 5px 0;
 
@@ -515,12 +515,14 @@ h1.navbar-brand {
 ==================================================================*/
 
 #about {
-    background-color: white;
-    color: #7A0C84;
+    background-image: url(../img/banner.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 #about h3 {
-    color: #7A0C84;
+    color: white;
     margin: 0 0 35px;
     text-transform: uppercase;
 }
@@ -759,13 +761,16 @@ ul.external li a:hover {
     max-width: 200px;
 }
 
+.testimonial-item p {
+    text-align: center;
+}
+
 .testimonial-item > div {
     line-height: 30px;
     position: relative;
 }
 
-.testimonial-item > div:before {
-    background-image: url("../img/icons/quotes.png");
+/*.testimonial-item > div:before {
     background-repeat: no-repeat;
     bottom: 127px;
     height: 33px;
@@ -775,7 +780,6 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div:after {
-    background-image: url("../img/icons/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
     bottom: -50px;
@@ -783,12 +787,12 @@ ul.external li a:hover {
     position: absolute;
     right: 0;
     width: 45px;
-}
+}*/
 
 .testimonial-item > div > span {
     display: inline-block;
     font-weight: 700;
-    margin: 40px 0 30px;
+    margin: 20px 0 20px;
     text-transform: uppercase;
 }
 
@@ -901,7 +905,7 @@ ul.external li a:hover {
 ==================================================================*/
 
 #social {
-    background-image: url(../img/slider/banner.jpg);
+    background-image: url(../img/slider/bannerfollow.jpg);
     padding: 0;
 }
 
@@ -1047,7 +1051,7 @@ textarea.form-control {
 
 .subscribe.form-control {
     background-color: transparent;
-    border: 1px solid #7f7f7f;
+    border: 1px solid white;
 }
 
 .subscribe.form-control:focus {
@@ -1057,9 +1061,8 @@ textarea.form-control {
 }
 
 .submit-icon {
-    background-color: #7f7f7f;
-    border: 0 none;
-    border-radius: 0;
+    background-color: #5B0668;
+    border: 0px solid white;
     color: #c1c1c1;
     padding: 13px 20px;
     position: absolute;
